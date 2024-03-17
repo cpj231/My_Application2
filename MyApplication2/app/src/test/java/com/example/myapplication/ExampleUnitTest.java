@@ -1,0 +1,34 @@
+package com.example.myapplication;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+import java.util.HashSet;
+import java.util.Random;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() {
+        assertEquals(4, 2 + 2);
+    }
+
+    @Test
+    public void testSet() {
+        HashSet<Integer> hashSet = new HashSet<>();
+        hashSet.add(4);
+        hashSet.add(2);
+        hashSet.add(5);
+        for (int i = 0; i < 10; i++) {
+
+            Random random = new Random();
+            random.nextInt();
+            System.out.println(random.nextInt(2)+2);
+        }
+    }
+}
